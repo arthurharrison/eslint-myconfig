@@ -1,0 +1,15 @@
+{
+    "best-practices":{
+        // require return statements to either always or never specify values
+        //eslint.org/docs/rules/consistent-return
+        "consistent-return": "error",
+        
+        // disallow use of arguments.caller or arguments.callee
+        // creio que ninguem comete esse erro na softeam, 
+        // mas mesmo assim achei bacana ter
+        // eslint.org/docs/rules/no-caller
+        "no-caller": "warn",
+        
+
+    }
+}

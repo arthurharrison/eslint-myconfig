@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "./index.js",
+    "./tester.js"],
+  "rules": {
+    //./tester.js não está certo, está certo
+    // eslint.org/docs/rules/comma-dangle
+    // Seguindo o exemplo do airbnb, pois pode ser legal reverter um
+    // arquivo para JSON em algum momento.
+    "comma-dangle": 0
+  }
+}
