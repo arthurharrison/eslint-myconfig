@@ -1,5 +1,20 @@
 {
     "best-practices":{
+        // github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/rules/best-practices.js
+
+        //stopped in cyclomatic
+
+        // enforces return statements in callbacks of array's methods
+        // Se voce esquece de colocar um 'return' em um callback de array,
+        // provavelmente vai acontecer algum erro.
+        // eslint.org/docs/rules/array-callback-return
+        "array-callback-return": "warn",
+
+        // seria legal colocar como warn, mas estara
+        // vetada o uso de var no script (let, e const no lugar)
+        // eslint.org/docs/rules/block-scoped-var
+        "block-scoped-var": "off",
+
         // require return statements to either always or never specify values
         //eslint.org/docs/rules/consistent-return
         "consistent-return": "error",
@@ -9,6 +24,12 @@
         // mas mesmo assim achei bacana ter
         // eslint.org/docs/rules/no-caller
         "no-caller": "warn",
+
+        // disallow division operators explicitly at beginning of regular expression
+        // Não vejo razão de proibir isso, mas deixar aqui. PS: Também é desligado no eslint:recommended.
+        // eslint.org/docs/rules/no-div-regex
+        "no-div-regex": "off"
+        
         
 
     }
