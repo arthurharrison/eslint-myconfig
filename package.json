@@ -1,0 +1,19 @@
+{
+  "name": "eslint-myconfig",
+  "version": "1.0.0",
+  "description": "ESLint Configuration used by me",
+  "main": "index.js",
+  "scripts": {
+    "test" : "eslint testPurpose.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arthurharrison/eslint-myconfig.git"
+  },
+  "author": "Arthur Harrison",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arthurharrison/eslint-myconfig/issues"
+  },
+  "homepage": "https://github.com/arthurharrison/eslint-myconfig#readme"
+}
