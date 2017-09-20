@@ -4,6 +4,7 @@
   "description": "ESLint Configuration used by me",
   "main": "index.js",
   "scripts": {
+    "pretest":"node startMessage.js",
     "test" : "eslint testPurpose.js"
   },
   "repository": {
