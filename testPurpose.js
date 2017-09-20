@@ -1,21 +1,12 @@
 /*
 Arthur Tavares
-Telegram Bot com conexao com o Firebase
-Criado:28/08
-To do:
-||| Identar e comentar melhor o codigo(em progresso)!
-||| OLHAR DAYER
-||| OLHAR LEDDEALER
-
-|||id de igor: 142498957
-|||id de Arth: 140056512
 */
 // Inicializar o Bot
 let VowTelegramBot = require('vow-telegram-bot');
 
 
 bot = new VowTelegramBot({
-  token: '216764922:AAGzWm4Dj_LU1Is3MWlz5rpuc5VSO7VNQJc',
+  token: 'your-token',
   polling: {
     timeout: 500,
     limit: 100
@@ -79,9 +70,9 @@ let x = now.getDay(); //avançador de dias
 //Inicializa o Firebase
 let firebase = require('firebase');
 let config = {
-  apiKey: 'AIzaSyDDqxOWdg4ZAl1x9iwp1uZPuFBjdpikbM8',
-  authDomain: 'start-ef9d9.firebaseapp.com',
-  databaseURL: 'https://start-ef9d9.firebaseio.com',
+  apiKey: 'your-api',
+  authDomain: 'your-auth',
+  databaseURL: 'your-URL',
   storageBucket: '',
 };
 firebase.initializeApp(config);
@@ -241,7 +232,7 @@ let info = new Object();
 
 function enviaMensagem(boxinf){
   info.url = 'https://api.telegram.org/bot';
-  info.token = '216764922:AAGzWm4Dj_LU1Is3MWlz5rpuc5VSO7VNQJc';
+  info.token = 'your-token';
   info.comandoUpdate = '/getUpdates';
   info.comandoSendMessage = '/sendMessage';
   info.comandoOffset = '?offset=';
@@ -675,7 +666,7 @@ function ledDealer(nLed){
 //======================================
 //Action do Bot em Resposta ao Usuario
 //WORK HERE
-let tg = require('telegram-node-bot')('216764922:AAGzWm4Dj_LU1Is3MWlz5rpuc5VSO7VNQJc');
+let tg = require('telegram-node-bot')('your-token');
 
 
 tg.router.
