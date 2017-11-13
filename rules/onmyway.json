@@ -2,8 +2,6 @@
     "best-practices":{
         // github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/rules/best-practices.js
 
-        //stopped in cyclomatic
-
         // enforces return statements in callbacks of array's methods
         // Se voce esquece de colocar um 'return' em um callback de array,
         // provavelmente vai acontecer algum erro.
@@ -31,7 +29,7 @@
         "no-div-regex": "off",
 
         // disallow else after a return in an if
-        //Estou com duvida se devo ou pera 
+        //Estou com duvida se devo ou pera
         // eslint.org/docs/rules/no-else-return
         "no-else-return" : ["error", { "allowElseIf": false }],
 
@@ -48,9 +46,26 @@
 
         // disallow declaring the same variable more then once
         // eslint.org/docs/rules/no-redeclare
-        "no-redeclare": "error"
+        "no-redeclare": "error",
 
-        
+        // disallow use of `javascript:` urls.
+        // Obs: stackoverflow.com/questions/13497971/what-is-the-matter-with-script-targeted-urls
+        // eslint.org/docs/rules/no-script-url
+        "no-script-url": "error",
+
+        // disallow self assignment
+        // eslint.org/docs/rules/no-self-assign
+        "no-self-assign": "error",
+
+        // disallow comparisons where both sides are exactly the same
+        // eslint.org/docs/rules/no-self-compare
+        "no-self-compare": "error",
+
+        // disallow useless string concatenation
+        // eslint.org/docs/rules/no-useless-concat
+        "no-useless-concat":"warn"
+
+
 
     }
 }
